@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ENTITY | Official Teaser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="game-title">
+        <p style="letter-spacing: 10px; color: #555;">SHADAN ORIGINALS PRESENTS</p>
+        <h1 class="entity-logo">THE ENTITY</h1>
+    </div>
+
+    <canvas id="storm-canvas"></canvas>
+
+    <div class="selector-screen">
+        <div class="char-half" id="hero-select" onclick="openLore('endemor')">
+            <span style="color: var(--ice)">01 // GUARDIAN</span>
+            <h2 class="char-tag hero-text">ENDEMOR</h2>
+            <p>THE ELEMENTAL HARBINGER</p>
+        </div>
+        <div class="char-half" id="villain-select" onclick="openLore('demenoir')">
+            <span style="color: var(--decay)">02 // REVELATION</span>
+            <h2 class="char-tag villain-text">DEMENOIR</h2>
+            <p>THE VOID ARCHITECT</p>
+        </div>
+    </div>
+
+    <div id="char-modal" class="character-view">
+        <div class="close-btn" onclick="closeLore()">CLOSE FILE</div>
+        <div class="lore-content" id="lore-body"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
